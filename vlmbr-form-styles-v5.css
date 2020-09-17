@@ -1,0 +1,52 @@
+html {
+	padding-top: 25px;
+}
+
+body {
+	width: 95%; 
+
+	color: white; 
+	background-color: #248f24;
+<--!	margin: 25 auto; -->
+
+}
+
+h3 {
+	color: #ffff00;
+/*	text-align: center;  */
+	margin-left: 150px;
+}
+
+
+label {
+	display: inline-block;
+/*	display: block; */
+	float: left;
+	clear: left;
+	width: 225px;
+	text-align: right;
+	font-size: 1.2em;
+	   
+	}
+
+input {
+	display: inline-block;
+	float: left;
+	}
+
+span {
+	display: inline-block;
+	float: left;
+	padding-left: 1em;
+	font-size: 1.1em;
+	}
+
+input[type="submit"] {
+	display: inline-block;
+	color: white;
+	background-color: red;
+	font-weight: bold;
+	font-size: 1.5em;
+	}
+
+

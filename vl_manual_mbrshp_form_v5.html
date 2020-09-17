@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> VL Manual Membership Form v3 </title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="vlmbr-form-styles-v5.css">
+</head>
+
+		<body>
+
+			<fieldset>
+
+			<form method="post" action="./cgi-bin/vl_man_mbrshp_form.url.py" >
+
+			<h3> VanLUG Manual Membership Form v5 </h3>
+
+			<label for="id_obt"> Id OBT <em>*</em>  &emsp; </label>
+			<input type="text" id="id_obt" autofocus required name="id_obt"  autofocus required pattern="[0-9]*" >
+			<span> One Big Table id number - unique record id, assigned automatically, eg. 1,2,3,...leave blank.</span><br>
+			
+			<label for="id_vlmbr_increment"> Id VLmbr Increment <em>*</em>  &emsp; </label>
+			<input type="text" id="id_vlmbr_increment" name="id_vlmbr_increment"  autofocus required pattern="[0-9]*" >
+			<span> VanLUG Membership Number, increments automatically, eg. 1000, 1001, 1002....leave blank</span><br>
+
+			<label for="id_pmp"> Id PMP <em>*</em>  &emsp; </label>
+			<input type="text" id="id_pmp" name="id_pmp" autofocus required pattern="[0-9]*" >
+			<span> PMP Id Number, if known, copy from PMP data, otherwise "0". eg. ...</span><br>
+			
+			<label for="id_pmp_usr"> Id PMP User <em>*</em>  &emsp; </label>
+			<input type="text" id="id_pmp_usr" name="id_pmp_usr"  autofocus required pattern="[A-Za-z0-9]*" >
+			<span> PMP User Id, if known, copy from PMP data, otherwise "unknown". eg. .....</span><br>
+
+			<label for="id_vfb"> Id VFB <em>*</em>  &emsp; </label>
+			<input type="text" id="id_vfb" name="id_vfb" autofocus required pattern="[A-Za-z0-9]*" >
+			<span> Virtual Form Builder Id, if known, copy from VFB data, otherwise "0"eg, .... </span><br>
+			
+			<label for="id_vfb_usr"> Id VFB User <em>*</em>  &emsp; </label>
+			<input type="text" id="id_vfb_usr" name="id_vfb_usr" autofocus required pattern="[A-Za-z0-9]*" >
+			<span> Virtual Form Builder User Id, if known, copy from VFB data, otherwise "unknown"eg. ... </span><br>
+
+			<label for="fname"> First Name <em>*</em>  &emsp; </label>
+			<input type="text" id="fname" name="fname" autofocus required pattern="[A-Za-z]+"  >
+			<span> First Name, enter member's given name, eg. John </span><br>
+			
+			<label for="lname"> Last Name <em>*</em>  &emsp; </label>
+			<input type="text" id="lname" name="lname"  autofocus required pattern="[A-Za-z]+" >
+			<span> Last Name, enter member's family name, eg. Lennon </span><br>
+
+			<label for="email"> Email <em>*</em>  &emsp; </label>
+			<input type="email" id="email" name="email"  autofocus required pattern="[A-Za-z0-9@\-.]+" >
+			<span> Email Address, enter member's complete email address, eg. john@beatles.com </span><br>
+			
+			<label for="usrname"> User Name <em>*</em>   &emsp; </label>
+			<input type="text" id="usrname" name="usrname"  autofocus required  >
+			<span> User Name, copy member's user name from paper form, eg. imagine </span><br>
+			
+			<label for="passwd"> Password <em>*</em>  &emsp; </label>
+			<input type="password" id="passwd" name="passwd" autofocus required   >
+			<span> Password, copy member's password from paper form, eg. $uper$ecret </span><br>
+
+			<label for="phone_num"> Phone Number <em>*</em>  &emsp; </label>
+			<input type="tel" id="phone_num" name="phone_num"  autofocus required >
+			<span> Phone Number, copy member's phone number from paper form, eg. 604-123-4567 </span><br>
+
+			<label for="addr1"> Address 1 <em>*</em>  &emsp; </label>
+			<input type="text" id="addr1" name="addr1"  autofocus required pattern="[A-Za-z0-9\-\s]+" >
+			<span> Address Line 1, source member's address from paper form, eg. P.O. Box 1234 </span><br>
+
+			<label for="addr2"> Address 2 &ensp;  &emsp; </label>
+			<input type="text" id="addr2" name="addr2"  autofocus pattern="[A-Za-z0-9\-\s]+" >
+			<span> Address Line 2, source member's address from paper form, eg. Main Post Office </span><br>
+
+			<label for="city"> City <em>*</em>  &emsp; </label>
+			<input type="text" id="city" name="city"  autofocus required pattern="[A-Za-z\-\s]+" >
+			<span> City, source member's city from paper form, eg. Vancouver </span><br>
+
+			<label for="prov_state"> Province/State <em>*</em>  &emsp; </label>
+			<input type="text" id="prov_state" name="prov_state"  autofocus required pattern="[A-Za-z\s]+" >
+			<span> Province/State, source member's province from form, eg. British Columbia </span><br>
+
+			<label for="postalc_zip"> Postal Code <em>*</em>  &emsp; </label>
+			<input type="text" id="postalc_zip" name="postalc_zip" required autofocus pattern="[A-Za-z0-9\s\-]+"  >
+			<span> Postal Code, source member's postal code from form, eg A1B 2C3 </span><br>
+
+			<label for="country"> Country <em>*</em>  &emsp; </label>
+			<input type="text" id="country" name="country" autofocus required pattern="[A-Za-z\s]+"  >
+			<span> Country, source member's country from form, eg. Canada </span><br>
+
+			<label for="comments_expertise"> Comments & Expertise <em>*</em>  &emsp; </label>
+			<input type="text" id="comments_expertise" name="comments_expertise"  autofocus required pattern="[A-Za-z\s]" >
+			<span> Talents, Skills and Comments, source member's C&E from form, eg. MSc, DBA, Debian Maintainer, newbie,...</span><br>
+
+			<label for="start_date"> Start Date <em>*</em> &emsp; </label>
+			<input type="date" id="start_date" name="start_date"  autofocus required >
+			<span> &emsp;&emsp;&emsp;&ensp;&nbsp; Membership Starting Date, source from form - date of signup? eg. 1970-01-01 </span><br>
+			
+			<label for="expir_date"> Expiry Date <em>*</em>  &emsp; </label>
+			<input type="date" id="expir_date" name="expir_date"  autofocus required >
+			<span> &emsp;&emsp;&emsp;&ensp;&nbsp; Membership Expiry Date, start_date + 365, use ADDDATE in MariaDB auto-entry? </span><br>
+
+			<label for="mbr_status"> Membership Status <em>*</em>  &emsp; </label>
+			<input type="text" id="mbr_status" name="mbr_status" autofocus required  pattern="[A-Za-z\s,]+" >
+			<span> Member's Status, eg. Active, Retired, Inactive, Arrears, etc.... manual entry? </span><br>
+
+			<label for="brd_posit"> Board Position &ensp;  &emsp; </label>
+			<input type="text" id="brd_posit" name="brd_posit" autofocus pattern="[A-Za-z\s,]+" >
+			<span> Current and Previous Board Positions, eg. President, Treasurer, Director etc... add manually.</span><br>
+			
+			<label for="keypunch"> Keypunch <em>*</em>  &emsp; </label>
+			<input type="text" id="keypunch" name="keypunch" autofocus required pattern="[A-Za-z\s]+" >
+			<span> Data Entry Keypunch Person, eg. rms, esr, bob, jjw, wgm, iain etc.... </span><br>
+
+			<label for="paymt_type"> Payment Type <em>*</em>  &emsp; </label>
+			<input type="text" id="paymt_type" name="paymt_type"  autofocus required pattern="[A-Za-z]+" >
+			<span> Type of Payment, eg. Cash, Cheque, PayPal, Visa, MasterCard, beaverskin, bullion, etc... manual entry.</span><br>
+
+			<label for="amount"> Amount <em>*</em>  &emsp; </label>
+			<input type="number" id="amount" name="amount"  autofocus required pattern="[0-9.$]+" >
+			<span> &ensp;&nbsp; Payment Amount, eg. $20.00, $10.00, etc.... manual entry. </span><br>
+
+			<label for="donation"> Donation &ensp;  &emsp; </label>
+			<input type="number" id="donation" name="donation" autofocus pattern="[0-9.$]+"  >
+			<span> &ensp;&nbsp; Donation Amount, eg. $25.00, $50.00, $100.00, etc... manual entry. </span><br>
+
+			<label for="subtotal"> Subtotal <em>*</em>  &emsp; </label>
+			<input type="number" id="subtotal" name="subtotal"  autofocus required pattern="[0-9.$]+" >
+			<span> &ensp;&nbsp; Subtotal Amount, eg. $20.00, $25.00, etc... manual entry. </span><br>
+
+			<label for="total"> Total <em>*</em>  &emsp; </label>
+			<input type="number" id="total" name="total"  autofocus required pattern="[0-9.$]+" >
+			<span> &ensp;&nbsp; Total Amount, eg. $25.00, $50.00, $20.00, etc.... manual entry. </span><br>
+
+			<label for="gateway"> Gateway <em>*</em>  &emsp; </label>
+			<input type="text" id="gateway" name="gateway"  autofocus required pattern="[A-Za-z0-9.\-]+" >
+			<span> Gateway, eg. ?? needed for PayPal. </span><br>
+			<br>
+			
+			<label> </label>
+			<input type="submit" value=" Enter Data " align: center style="margin-left: 16%"><br>
+
+			</fieldset>
+			
+
+		</form>
+
+		</body>
+</html>
+
