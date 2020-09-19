@@ -1,0 +1,2 @@
+sudo mysql
+source db_init.sql
